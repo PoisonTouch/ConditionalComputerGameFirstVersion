@@ -23,22 +23,20 @@ public class ConditionalComputerGameFirstVersion {
             System.out.println("remaining resources = " + remainingResources);
             if (remainingResources <= multiplier) {
                 int maxStolenResource = stolenRecources[0];
-                int index=0;
-                for (int i=0;i<stolenRecources.length;i++) {
+                int index = 0;
+                for (int i = 0; i < stolenRecources.length; i++) {
                     if (stolenRecources[i] > maxStolenResource) {
                         maxStolenResource = stolenRecources[i];
-                        index=i;
+                        index = i;
                     }
                 }
-                stolenRecources[index]+=remainingResources;
+                stolenRecources[index] += remainingResources;
             }
-
-
-
         }
         if (sumStolenResources > loadCapacity) {
 
         }
         return stolenRecources;
 
+    }
 }
